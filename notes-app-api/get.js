@@ -35,37 +35,38 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var uuid_1 = require("uuid");
-var dynamoDbLib = require("./libs/dynamodb-lib");
-var response_lib_1 = require("./libs/response-lib");
-function main(event, _context, _callback) {
+var dynamoDbLib = require("./libs/dynamodb-lib.js");
+var response_lib_js_1 = require("./libs/response-lib.js");
+function main(event, context) {
     return __awaiter(this, void 0, void 0, function () {
-        var data, params, e_1;
+        var params, result, e_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    data = JSON.parse(event.body);
                     params = {
                         TableName: "notes",
-                        Item: {
+                        Key: {
                             userId: event.requestContext.identity.cognitoIdentityId,
-                            noteId: uuid_1.default.v1(),
-                            content: data.content,
-                            attachment: data.attachment,
-                            createdAt: Date.now()
+                            noteId: event.pathParameters.id
                         }
                     };
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 3, , 4]);
-                    return [4 /*yield*/, dynamoDbLib.call("put", params)];
+                    return [4 /*yield*/, dynamoDbLib.call("get", params)];
                 case 2:
-                    _a.sent();
-                    return [2 /*return*/, response_lib_1.success(params.Item)];
+                    result = _a.sent();
+                    if (result.Item) {
+                        return [2 /*return*/, response_lib_js_1.success(result.Item)];
+                    }
+                    else {
+                        return [2 /*return*/, response_lib_js_1.failure({ status: false, error: "Item was not found" })];
+                    }
+                    return [3 /*break*/, 4];
                 case 3:
                     e_1 = _a.sent();
                     console.error(e_1);
-                    return [2 /*return*/, response_lib_1.failure({ status: false })];
+                    return [2 /*return*/, response_lib_js_1.failure({ status: false })];
                 case 4: return [2 /*return*/];
             }
         });
