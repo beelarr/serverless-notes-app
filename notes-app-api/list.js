@@ -35,9 +35,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var dynamoDbLib = require("./libs/dynamodb-lib.js.js");
-var response_lib_js_1 = require("./libs/response-lib.js");
-function main(event, context) {
+var dynamoDbLib = require("./libs/dynamodb-lib");
+var response_lib_1 = require("./libs/response-lib");
+function main(event, _context) {
     return __awaiter(this, void 0, void 0, function () {
         var params, result, e_1;
         return __generator(this, function (_a) {
@@ -45,28 +45,22 @@ function main(event, context) {
                 case 0:
                     params = {
                         TableName: "notes",
-                        Key: {
-                            userId: event.requestContext.identity.cognitoIdentityId,
-                            noteId: event.pathParameters.id
+                        KeyConditionExpression: "userId = :userId",
+                        ExpressionAttributeValues: {
+                            ":userId": event.requestContext.identity.cognitoIdentityId
                         }
                     };
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 3, , 4]);
-                    return [4 /*yield*/, dynamoDbLib.call("get", params)];
+                    return [4 /*yield*/, dynamoDbLib.call("query", params)];
                 case 2:
                     result = _a.sent();
-                    if (result.Item) {
-                        return [2 /*return*/, response_lib_js_1.success(result.Item)];
-                    }
-                    else {
-                        return [2 /*return*/, response_lib_js_1.failure({ status: false, error: "Item was not found" })];
-                    }
-                    return [3 /*break*/, 4];
+                    return [2 /*return*/, response_lib_1.success(result.Items)];
                 case 3:
                     e_1 = _a.sent();
                     console.error(e_1);
-                    return [2 /*return*/, response_lib_js_1.failure({ status: false })];
+                    return [2 /*return*/, response_lib_1.failure({ status: false })];
                 case 4: return [2 /*return*/];
             }
         });
