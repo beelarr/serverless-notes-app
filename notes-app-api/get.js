@@ -35,8 +35,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var dynamoDbLib = require("./libs/dynamodb-lib.js.js");
-var response_lib_js_1 = require("./libs/response-lib.js");
+var dynamoDbLib = require("./libs/dynamodb-lib");
+var response_lib_1 = require("./libs/response-lib");
 function main(event, context) {
     return __awaiter(this, void 0, void 0, function () {
         var params, result, e_1;
@@ -57,16 +57,16 @@ function main(event, context) {
                 case 2:
                     result = _a.sent();
                     if (result.Item) {
-                        return [2 /*return*/, response_lib_js_1.success(result.Item)];
+                        return [2 /*return*/, response_lib_1.success(result.Item)];
                     }
                     else {
-                        return [2 /*return*/, response_lib_js_1.failure({ status: false, error: "Item was not found" })];
+                        return [2 /*return*/, response_lib_1.failure({ status: false, error: "Item was not found" })];
                     }
                     return [3 /*break*/, 4];
                 case 3:
                     e_1 = _a.sent();
                     console.error(e_1);
-                    return [2 /*return*/, response_lib_js_1.failure({ status: false })];
+                    return [2 /*return*/, response_lib_1.failure({ status: false })];
                 case 4: return [2 /*return*/];
             }
         });
