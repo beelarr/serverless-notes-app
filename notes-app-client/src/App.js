@@ -45,20 +45,16 @@ class App extends Component {
 
     return (
       !this.state.isAuthenticating && (
-        <Container className='app'>
+        <Container className='App'>
           <Navbar collapseOnSelect expand="lg" bg="light">
             <Navbar.Brand className="navbar-brand" href="#home">Scratch</Navbar.Brand>
               <Nav className="mr-auto">
                 {this.state.isAuthenticated ? (
-                  <Nav.Item onClick={this.handleLogout}>Logout</Nav.Item>
+                  <Nav.Link onClick={this.handleLogout}>Logout</Nav.Link>
                 ) : (
                   <Fragment>
-                    <LinkContainer to="/signup">
-                      <Nav.Item>Signup</Nav.Item>
-                    </LinkContainer>
-                    <LinkContainer to="/login">
-                      <Nav.Item>Login</Nav.Item>
-                    </LinkContainer>
+                    <Nav.Link to="/signup">Signup</Nav.Link>
+                    <Nav.Link to="/login">Login</Nav.Link>
                   </Fragment>
                 )}
               </Nav>

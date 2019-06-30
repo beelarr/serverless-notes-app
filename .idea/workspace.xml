@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec095e52-97bf-4e7c-a331-ed665449ee3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes-app-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/src/components/LoaderButton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/src/components/LoaderButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/components/LoaderButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/src/containers/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/containers/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes-app-client/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="433">
+              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -107,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoaderButton.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoaderButton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes-app-client/src/components/LoaderButton.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
@@ -139,6 +132,7 @@
       <find>Navbar</find>
       <find>NavbarToggle</find>
       <find>Toggle</find>
+      <find>Logout</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -191,9 +185,9 @@
         <option value="$PROJECT_DIR$/notes-app-client/src/components/LoaderButton.css" />
         <option value="$PROJECT_DIR$/notes-app-client/src/index.js" />
         <option value="$PROJECT_DIR$/notes-app-client/package.json" />
-        <option value="$PROJECT_DIR$/notes-app-client/src/App.js" />
         <option value="$PROJECT_DIR$/notes-app-client/src/containers/Login.js" />
         <option value="$PROJECT_DIR$/notes-app-client/src/components/LoaderButton.js" />
+        <option value="$PROJECT_DIR$/notes-app-client/src/App.js" />
       </list>
     </option>
   </component>
@@ -304,12 +298,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561816072960</updated>
-      <workItem from="1561816074197" duration="25515000" />
+      <workItem from="1561816074197" duration="25759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25515000" />
+    <option name="totallyTimeSpent" value="25759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="700" y="23" width="980" height="976" extended-state="0" />
@@ -321,7 +315,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908458" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32908458" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32908458" />
       <window_info anchor="bottom" id="Version Control" weight="0.32908458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" weight="0.58980304" />
@@ -370,7 +364,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/notes-app-client/src/components/LoaderButton.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -663,16 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -689,6 +681,16 @@
           <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
