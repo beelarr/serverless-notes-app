@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { LinkContiner, withRouter } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Auth } from "aws-amplify";
@@ -45,19 +45,27 @@ class App extends Component {
 
     return (
       !this.state.isAuthenticating && (
-        <Container className='App'>
+        <Container className="App">
           <Navbar collapseOnSelect expand="lg" bg="light">
-            <Navbar.Brand className="navbar-brand" href="#home">Scratch</Navbar.Brand>
-              <Nav className="mr-auto">
-                {this.state.isAuthenticated ? (
+            <Navbar.Brand className="navbar-brand" href="#home">
+              Scratch
+            </Navbar.Brand>
+            <Nav className="mr-auto">
+              {this.state.isAuthenticated ? (
+                <LinkContainer to="/logout">
                   <Nav.Link onClick={this.handleLogout}>Logout</Nav.Link>
-                ) : (
-                  <Fragment>
-                    <Nav.Link to="/signup">Signup</Nav.Link>
-                    <Nav.Link to="/login">Login</Nav.Link>
-                  </Fragment>
-                )}
-              </Nav>
+                </LinkContainer>
+              ) : (
+                <Fragment>
+                  <LinkContainer to="/signup">
+                    <Nav.Link>Signup</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/login">
+                    <Nav.Link>Login</Nav.Link>
+                  </LinkContainer>
+                </Fragment>
+              )}
+            </Nav>
           </Navbar>
           <Routes childProps={childProps} />
         </Container>
