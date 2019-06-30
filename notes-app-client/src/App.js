@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { Container, Nav, Navbar, NavItem } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Auth } from "aws-amplify";
 
@@ -34,7 +34,7 @@ class App extends Component {
   handleLogout = async () => {
     await Auth.signOut();
     this.userHasAuthenticated(false);
-	  this.props.history.push("/login");
+    this.props.history.push("/login");
   };
 
   render() {
@@ -45,33 +45,29 @@ class App extends Component {
 
     return (
       !this.state.isAuthenticating && (
-        <Container className="App container">
-          <Navbar fluid collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">
-              <Link to="/">Scratch</Link>
-            </Navbar.Brand>
-
-            <Nav pullRight>
-              {this.state.isAuthenticated ? (
-                <NavItem onClick={this.handleLogout}>Logout</NavItem>
-              ) : (
-                <Fragment>
-                  <LinkContainer to="/signup">
-                    <NavItem>Signup</NavItem>
-                  </LinkContainer>
-                  <LinkContainer to="/login">
-                    <NavItem>Login</NavItem>
-                  </LinkContainer>
-                </Fragment>
-              )}
-            </Nav>
+        <Container className='app'>
+          <Navbar collapseOnSelect expand="lg" bg="light">
+            <Navbar.Brand className="navbar-brand" href="#home">Scratch</Navbar.Brand>
+              <Nav className="mr-auto">
+                {this.state.isAuthenticated ? (
+                  <Nav.Item onClick={this.handleLogout}>Logout</Nav.Item>
+                ) : (
+                  <Fragment>
+                    <LinkContainer to="/signup">
+                      <Nav.Item>Signup</Nav.Item>
+                    </LinkContainer>
+                    <LinkContainer to="/login">
+                      <Nav.Item>Login</Nav.Item>
+                    </LinkContainer>
+                  </Fragment>
+                )}
+              </Nav>
           </Navbar>
           <Routes childProps={childProps} />
         </Container>
       )
     );
-
   }
 }
 
-export default withRouter(App)
+export default withRouter(App);
