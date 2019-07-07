@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec095e52-97bf-4e7c-a331-ed665449ee3f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/notes-app-client/src/libs/awsLib.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes-app-api/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-api/serverless.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app-client/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app-api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-api/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app-client/src/containers/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/containers/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app-client/src/containers/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/containers/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes-app-client/src/containers/NewNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app-client/src/containers/NewNote.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,8 +25,8 @@
       <file leaf-file-name="NewNote.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/NewNote.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+            <state relative-caret-position="179">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -37,47 +39,64 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes-app-client/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes-app-client/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes-app-api/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="204">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes-app-api/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="create.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes-app-api/create.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="25" column="1" selection-start-line="25" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="245">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serverless.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="serverless.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes-app-api/serverless.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="-67">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="awsLib.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes-app-client/src/libs/awsLib.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+              <folding>
+                <element signature="e#1#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -87,20 +106,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list-event.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes-app-api/mocks/list-event.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="update-event.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes-app-api/mocks/update-event.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -122,10 +127,12 @@
       <find>api g</find>
       <find>validateForm</find>
       <find>Dyna</find>
-      <find>debugger</find>
       <find>.auth.us-east-1.amazoncognito.com</find>
       <find>InvokeManager.start</find>
       <find>awslambda</find>
+      <find>debugger</find>
+      <find>v1</find>
+      <find>uuid</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -135,6 +142,7 @@
       <dir>$PROJECT_DIR$/notes-app-client/node_modules</dir>
       <dir>$PROJECT_DIR$/notes-app-client</dir>
       <dir>$PROJECT_DIR$/notes-app-client/node_modules/aws-sdk/node_modules</dir>
+      <dir>$PROJECT_DIR$/notes-app-api/tests</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -166,11 +174,8 @@
         <option value="$PROJECT_DIR$/notes-app-client/public/index.html" />
         <option value="$PROJECT_DIR$/notes-app-client/src/index.css" />
         <option value="$PROJECT_DIR$/notes-app-client/src/containers/Home.tsx" />
-        <option value="$PROJECT_DIR$/notes-app-client/src/containers/Home.css" />
         <option value="$PROJECT_DIR$/notes-app-client/src/Routes.ts" />
         <option value="$PROJECT_DIR$/notes-app-client/src/Routes.tsx" />
-        <option value="$PROJECT_DIR$/notes-app-api/package.json" />
-        <option value="$PROJECT_DIR$/notes-app-client/src/containers/Home.js" />
         <option value="$PROJECT_DIR$/notes-app-client/src/containers/NotFound.js" />
         <option value="$PROJECT_DIR$/notes-app-client/src/containers/NotFound.css" />
         <option value="$PROJECT_DIR$/notes-app-client/src/containers/Login.css" />
@@ -190,9 +195,13 @@
         <option value="$PROJECT_DIR$/notes-app-client/src/Routes.js" />
         <option value="$PROJECT_DIR$/notes-app-client/src/App.js" />
         <option value="$PROJECT_DIR$/notes-app-client/src/config.js" />
+        <option value="$PROJECT_DIR$/notes-app-api/package.json" />
         <option value="$PROJECT_DIR$/notes-app-api/create.ts" />
-        <option value="$PROJECT_DIR$/notes-app-client/src/containers/NewNote.js" />
         <option value="$PROJECT_DIR$/notes-app-api/serverless.yml" />
+        <option value="$PROJECT_DIR$/notes-app-client/src/containers/NewNote.js" />
+        <option value="$PROJECT_DIR$/notes-app-client/src/libs/awsLib.js" />
+        <option value="$PROJECT_DIR$/notes-app-client/src/containers/Home.css" />
+        <option value="$PROJECT_DIR$/notes-app-client/src/containers/Home.js" />
       </list>
     </option>
   </component>
@@ -236,7 +245,27 @@
             <path>
               <item name="serverless-notes-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="serverless-notes-app" type="462c0819:PsiDirectoryNode" />
-              <item name="notes-app-api" type="462c0819:PsiDirectoryNode" />
+              <item name="notes-app-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverless-notes-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serverless-notes-app" type="462c0819:PsiDirectoryNode" />
+              <item name="notes-app-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverless-notes-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serverless-notes-app" type="462c0819:PsiDirectoryNode" />
+              <item name="notes-app-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="serverless-notes-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="serverless-notes-app" type="462c0819:PsiDirectoryNode" />
+              <item name="notes-app-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,26 +315,27 @@
       <updated>1561816072960</updated>
       <workItem from="1561816074197" duration="29298000" />
       <workItem from="1561929603913" duration="741000" />
-      <workItem from="1561930395446" duration="13210000" />
+      <workItem from="1561930395446" duration="16727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43249000" />
+    <option name="totallyTimeSpent" value="46766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="840" height="976" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.44200245" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2930403" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908458" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32908458" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32908458" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32908458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.58980304" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.50173813" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -338,11 +368,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/notes-app-api/create.js" />
-      </list>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -360,44 +385,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Signup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-api/update.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-api/delete.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-api/get.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes-app-client/public/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -416,13 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -475,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes-app-client/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -500,9 +473,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes-app-api/handler.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-api/create.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/notes-app-api/delete.js">
@@ -640,30 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-api/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-api/create.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="25" column="1" selection-start-line="25" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/NewNote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes-app-client/yarn.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -674,10 +620,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-api/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-api/yarn-error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-api/.webpack/service/create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="209" column="53" selection-start-line="209" selection-start-column="51" selection-end-line="209" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-api/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-api/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-api/create.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-api/create.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes-app-api/serverless.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="-67">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/NewNote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-client/src/libs/awsLib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes-app-client/src/containers/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
