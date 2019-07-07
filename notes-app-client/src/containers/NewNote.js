@@ -1,3 +1,5 @@
+import { API } from "aws-amplify";
+
 import React, { Component } from "react";
 import { FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
@@ -24,7 +26,7 @@ export default class NewNote extends Component {
 
   handleFileChange = e => (this.file = e.target.files[0]);
 
-  handleSubmit = e => {
+  handleSubmit = async e => {
     e.preventDefault();
     if (this.file && this.file.size > config.MAX_ATTACHMENT_SIZE) {
       alert(
@@ -35,7 +37,25 @@ export default class NewNote extends Component {
     }
 
     this.setState({ isLoading: true });
+
+    try {
+      await this.createNote({
+        content: this.state.content
+      });
+      this.props.history.push("/");
+    } catch (e) {
+      console.error(e);
+      alert(e);
+      this.setState({ isLoading: false });
+    }
   };
+
+  createNote(note) {
+    return API.post("notes", "/notes", {
+      body: note
+    });
+  }
+
   render() {
     return (
       <div className="NewNote">

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { LinkContiner, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Auth } from "aws-amplify";
