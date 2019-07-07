@@ -40,27 +40,27 @@ export default class NewNote extends Component {
     return (
       <div className="NewNote">
         <form onSubmit={this.handleSubmit}>
-	        <FormGroup controlId="content">
-		        <FormControl
-		          onChange={this.handleChange}
-		          value={this.state.content}
-		          componentClass="textarea"
-		        />
-	        </FormGroup>
-	        <FormGroup controlId="file">
-		        <FormLabel>Attachment</FormLabel>
-		        <FormControl onChange={this.handleFileChange} type="file" />
-	        </FormGroup>
-	        <LoaderButton
-	        block
-	        bsStyle="primary"
-	        bsSize="large"
-	        disabled={!this.validateForm()}
-	        type="submit"
-	        isLoading={this.state.isLoading}
-	        text="Create"
-	        loadingText="Creating..."
-	        />
+          <FormGroup controlId="content">
+            <FormControl
+              onChange={this.handleChange}
+              value={this.state.content}
+              componentClass="textarea"
+            />
+          </FormGroup>
+          <FormGroup controlId="file">
+            <FormLabel>Attachment</FormLabel>
+            <FormControl onChange={this.handleFileChange} type="file" />
+          </FormGroup>
+          <LoaderButton
+            block
+            bsStyle="primary"
+            bsSize="large"
+            disabled={!this.validateForm()}
+            type="submit"
+            isLoading={this.state.isLoading}
+            text="Create"
+            loadingText="Creating..."
+          />
         </form>
       </div>
     );
