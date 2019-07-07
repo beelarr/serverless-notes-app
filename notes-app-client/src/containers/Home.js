@@ -36,8 +36,8 @@ export default class Home extends Component {
       i !== 0 ? (
         <LinkContainer key={note.noteId} to={`/notes/${note.noteId}`}>
           <ListGroup.Item action={true}>
-	          <h4>{note.content.trim().split("\n")[0]}</h4>
-            <small>{`Created: ${Date(note.createdAt).toLocaleString()}`}</small>
+            <h4>{note.content.trim().split("\n")[0]}</h4>
+            <small>{`Created: ${Date(note.createdAt)}`}</small>
           </ListGroup.Item>
         </LinkContainer>
       ) : (
