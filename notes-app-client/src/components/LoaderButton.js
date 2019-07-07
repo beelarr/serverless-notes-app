@@ -14,7 +14,13 @@ export default ({
     disabled={disabled || isLoading}
     {...props}
   >
-    {isLoading && <Spinner style={{marginRight: '1rem'}}  animation="border" role="status" />}
+    {isLoading && (
+      <Spinner
+        style={{ marginRight: "1rem" }}
+        animation="border"
+        role="status"
+      />
+    )}
 
     {!isLoading ? text : loadingText}
   </Button>

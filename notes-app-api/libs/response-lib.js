@@ -11,7 +11,7 @@ function buildResponse(statusCode, body) {
     statusCode: statusCode,
     headers: {
       "Access-Control-Allow-Origin": "*",
-      "Access-COntrol-Allow-Credentials": true
+      "Access-Control-Allow-Credentials": true
     },
     body: JSON.stringify(body)
   };
