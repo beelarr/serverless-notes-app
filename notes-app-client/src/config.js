@@ -2,7 +2,7 @@ export default {
   MAX_ATTACHMENT_SIZE: 5000000,
   s3: {
     REGION: "us-east-1",
-    BUCKET: "notes-app-api-prod-serverlessdeploymentbucket-chmdb00bo95s"
+    BUCKET: "beelarr-notes-app-uploads"
   },
   apiGateway: {
     REGION: "us-east-1",
